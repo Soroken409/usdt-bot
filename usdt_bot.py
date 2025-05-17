@@ -130,7 +130,7 @@ def main_loop(chat_id):
             time.sleep(60)
             continue
 
-        if now.minute % 5 == 0:
+        if now.minute == 55:
             report = format_balance_report()
             bot.send_message(chat_id=chat_id, text=report, parse_mode="Markdown")
             time.sleep(60)
